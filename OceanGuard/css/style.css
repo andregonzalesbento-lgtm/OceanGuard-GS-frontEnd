@@ -69,6 +69,7 @@ body {
 .nav-logo {
   width: 36px;
   height: 36px;
+  border-radius: 8px;
 }
 .nav-nome {
   font-family: var(--fonte-titulo);
@@ -103,9 +104,9 @@ body {
   letter-spacing: 1px;
   text-transform: uppercase;
 }
-
 .nav-botao:hover {
-  background-color: #33d0dc;}
+  background-color: #33d0dc;
+}
 
 .hero {
   min-height: 100vh;
@@ -118,10 +119,12 @@ body {
   background-color: #091529;
 }
 .hero-logo {
-  width: 100px;
-  height: 100px;
+  width: 150px;
+  height: 150px;
   margin-bottom: 28px;
+  border-radius: 24px;
 }
+
 .hero-tag {
   display: flex;
   align-items: center;
@@ -213,12 +216,20 @@ body {
   color: var(--cinza-claro);
 }
 
+.badge i {
+  background-color: #ffffff;
+  color: #111111;
+  padding: 5px 6px;
+  border-radius: 6px;
+  font-size: 0.8rem;
+}
 
 .secao {
   padding: 90px 60px;
 }
 .fundo-escuro {
-  background-color: var(--azul-medio);}
+  background-color: var(--azul-medio);
+}
 .secao-cabecalho {
   margin-bottom: 48px;
 }
@@ -287,7 +298,8 @@ body {
 }
 
 .lado-texto {
-  flex: 1;}
+  flex: 1;
+}
 .stats {
   display: flex;
   flex-direction: column;
@@ -320,7 +332,8 @@ body {
   background-color: #0f2041;
   border: 1px solid #1a3d6e;
   border-radius: 12px;
-  padding: 30px;}
+  padding: 30px;
+}
 .lista-item {
   display: flex;
   align-items: flex-start;
@@ -329,18 +342,22 @@ body {
   border-bottom: 1px solid #1a3d6e;
 }
 .lista-item:last-child {
-  border-bottom: none;}
+  border-bottom: none;
+}
+
 .lista-icone {
-  font-size: 1.2rem;
   width: 40px;
   height: 40px;
-  background-color: #091529;
+  background-color: #ffffff;
   border-radius: 8px;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-shrink: 0;
+  color: #111111;
+  font-size: 1rem;
 }
+
 .lista-item strong {
   color: var(--branco);
   display: block;
@@ -362,10 +379,20 @@ body {
 .tech-card:hover {
   border-color: var(--ciano);
 }
+
 .tech-icone {
-  font-size: 1.8rem;
-  margin-bottom: 12px;
+  width: 48px;
+  height: 48px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #111111;
+  font-size: 1.3rem;
+  margin-bottom: 16px;
 }
+
 .tech-card h3 {
   font-family: var(--fonte-titulo);
   font-size: 0.9rem;
@@ -410,10 +437,20 @@ body {
 .obj-card:hover {
   border-color: var(--ciano);
 }
+
 .obj-icone {
-  font-size: 1.6rem;
+  width: 40px;
+  height: 40px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #111111;
+  font-size: 1.1rem;
   flex-shrink: 0;
 }
+
 .obj-card h3 {
   font-family: var(--fonte-titulo);
   font-size: 0.9rem;
@@ -436,10 +473,20 @@ body {
 .perfil-card:hover {
   border-color: var(--ciano);
 }
+
 .perfil-emoji {
-  font-size: 2rem;
+  width: 52px;
+  height: 52px;
+  background-color: #ffffff;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #111111;
+  font-size: 1.4rem;
   margin-bottom: 14px;
 }
+
 .perfil-tag {
   display: inline-block;
   padding: 4px 14px;
@@ -451,19 +498,16 @@ body {
   text-transform: uppercase;
   margin-bottom: 12px;
 }
-
 .tag-verde   { 
   background-color: #0f2041;
-   color: var(--ciano);   
-   border: 1px solid var(--ciano);}
-
-
+  color: var(--ciano);   
+  border: 1px solid var(--ciano);
+}
 .tag-azul    {
-   background-color: #0f2041;
-   color: #7bb8ff;        
-   border: 1px solid #7bb8ff;}
-
-
+  background-color: #0f2041;
+  color: #7bb8ff;        
+  border: 1px solid #7bb8ff;
+}
 .tag-dourado { 
   background-color: #0f2041; 
   color: var(--dourado);
@@ -488,7 +532,8 @@ body {
 }
 .lista-recursos li {
   font-size: 0.78rem;
-  color: var(--cinza-claro);}
+  color: var(--cinza-claro);
+}
 .publico-extra {
   display: flex;
   align-items: center;
@@ -499,10 +544,21 @@ body {
   padding: 24px 30px;
   margin-top: 18px;
 }
+
+
 .publico-extra-icone {
-  font-size: 2rem;
+  width: 48px;
+  height: 48px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #111111;
+  font-size: 1.3rem;
   flex-shrink: 0;
 }
+
 .publico-extra h3 {
   font-family: var(--fonte-titulo);
   font-size: 1rem;
@@ -525,9 +581,18 @@ body {
   border-color: var(--ciano);
 }
 .beneficio-icone {
-  font-size: 1.8rem;
-  margin-bottom: 12px;
+  width: 48px;
+  height: 48px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #111111;
+  font-size: 1.3rem;
+  margin-bottom: 14px;
 }
+
 .beneficio-card h3 {
   font-family: var(--fonte-titulo);
   font-size: 0.9rem;
@@ -569,10 +634,20 @@ body {
   top: 12px;
   right: 16px;
 }
+
 .fluxo-icone {
-  font-size: 1.8rem;
-  margin-bottom: 12px;
+  width: 48px;
+  height: 48px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #111111;
+  font-size: 1.3rem;
+  margin-bottom: 14px;
 }
+
 .fluxo-card h3 {
   font-family: var(--fonte-titulo);
   font-size: 0.88rem;
@@ -605,6 +680,7 @@ body {
 .celular-logo {
   width: 26px;
   height: 26px;
+  border-radius: 6px;
 }
 .celular-topo span {
   font-family: var(--fonte-titulo);
@@ -628,6 +704,9 @@ body {
   letter-spacing: 1.5px;
   text-transform: uppercase;
   margin-bottom: 5px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
 }
 .celular-card p {
   font-size: 0.74rem;
@@ -690,6 +769,7 @@ body {
 .rodape-logo {
   width: 34px;
   height: 34px;
+  border-radius: 8px;
 }
 .rodape-nome {
   font-family: var(--fonte-titulo);
